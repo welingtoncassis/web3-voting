@@ -1,0 +1,208 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "choice",
+						"type": "uint256"
+					}
+				],
+				"name": "addVote",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "option1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "option2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeToVote",
+						"type": "uint256"
+					}
+				],
+				"name": "addVoting",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentVoting",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getCurrentVoting",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "option1",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votes1",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "option2",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votes2",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "maxDate",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Voting",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "votes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "choice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "date",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "votings",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "option1",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votes1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "option2",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "votes2",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "maxDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Web3Voting.sol": "Web3Voting"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Web3Voting.sol": {
+			"keccak256": "0x5c8a2ad3c191aa7e927a64221a91347e49d33bc42857cc63332f2f3d8051f163",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://84f53e6cd160f9ca687bca05e61d917e63d0e376b2974a2e9aa50ddc5e3e8cc4",
+				"dweb:/ipfs/QmUr2WN4mu6aasBPZpYYbnfbm5WGYzkjJS3xo9FEp1PbU1"
+			]
+		}
+	},
+	"version": 1
+}
