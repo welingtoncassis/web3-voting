@@ -20,14 +20,14 @@ Deploy the Web3Voting smart contract on the Ethereum blockchain.
 2. Start a New Voting Session
 Call the addVoting function to start a new voting session. Provide the two options and the duration of the voting period. Only the contract owner can initiate a new voting session.
 
-```solidity function addVoting(string memory option1, string memory option2, uint timeToVote) public;```
+```function addVoting(string memory option1, string memory option2, uint timeToVote) public;```
 
 3. Retrieve Current Voting Session Details
 Use the getCurrentVoting function to retrieve the details of the current voting session, including the options, vote counts, and the voting deadline.
 
-```solidity function getCurrentVoting() public view returns (Voting memory);```
+```function getCurrentVoting() public view returns (Voting memory);```
 
 4. Cast a Vote
 Participants can cast their votes using the addVote function. Specify the choice (1 or 2) during the open voting period. Each participant can vote only once.
 
-```solidity function addVote(uint choice) public;````
+```function addVote(uint choice) public;````
