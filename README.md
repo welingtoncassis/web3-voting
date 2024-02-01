@@ -30,4 +30,4 @@ Use the getCurrentVoting function to retrieve the details of the current voting 
 4. Cast a Vote
 Participants can cast their votes using the addVote function. Specify the choice (1 or 2) during the open voting period. Each participant can vote only once.
 
-```function addVote(uint choice) public;````
+```function addVote(uint choice) public;```
